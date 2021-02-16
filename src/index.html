@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>mu</title>
+        <link rel="stylesheet" href="style.css" media="all">
+    </head>
+    <body>
+        <h1>muify</h1>
+        <p>
+            o kama mu e ijo ale
+        </p>
+        <div id="buttons">
+            <label for="img">Choose file...</label>
+            <input type="file" id="img" />
+            <button id="submit">mu</button>
+        </div>
+        <div id="container">
+            <svg width="300" height="300">
+                <defs>
+                    <mask id="mumask">
+                        <rect x="0" y="0" width="300" height="300" fill="black" />
+                        <circle cx="150" cy="150" r="80" stroke="white" stroke-width="50" fill="black" />
+                        <circle cx="60" cy="60" r="25" stroke="white" stroke-width="30" fill="black" />
+                        <circle cx="240" cy="60" r="25" stroke="white" stroke-width="30" fill="black" />
+                        <circle cx="150" cy="170" r="20" fill="white" />
+                    </mask>
+                </defs>
+                <image x="0" y="0" width="300" height="300" preserveAspectRatio="none" mask="url(#mumask)" id="render" />
+            </svg>
+            <img width="300" height="300" />
+        </div>
+        <footer>
+            by <a href="https://sugarfi.dev">sugarfi</a>
+        </footer>
+        <script src="index.js"></script>
+    </body>
+</html>
